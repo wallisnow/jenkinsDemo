@@ -15,10 +15,10 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
-@EnableWebMvc // 1
+@EnableWebMvc
 @EnableScheduling
 @ComponentScan("rest")
-public class MyMvcConfig extends WebMvcConfigurerAdapter {// 2
+public class MyMvcConfig extends WebMvcConfigurerAdapter {
 
 	@Bean
 	public InternalResourceViewResolver viewResolver() {
