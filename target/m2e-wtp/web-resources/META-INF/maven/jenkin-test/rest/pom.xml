@@ -23,6 +23,7 @@
 		<logback.version>1.0.13</logback.version>
 		<slf4j.version>1.7.5</slf4j.version>
 		<hibernate.version>5.4.1.Final</hibernate.version>
+		<javax.el.version>2.2.4</javax.el.version>
 	</properties>
 
 	<dependencies>
@@ -65,6 +66,17 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>${hibernate.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>javax.el-api</artifactId>
+			<version>${javax.el.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>javax.el</artifactId>
+			<version>${javax.el.version}</version>
 		</dependency>
 
 		<!-- Spring and Transactions -->
